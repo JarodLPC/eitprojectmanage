@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPC information</title>
+</head>
+<body>
+    <h1>OPC Information</h1>
+    <!-- opcid = models.AutoField(primary_key=True)
+    opctype = models.CharField(max_length=20) -->
+    <p><strong>OPC ID:</strong> {{ opc.opcid }}</p>
+    <p><strong>OPC Type:</strong> {{ opc.opctype }}</p>
+
+    <h1>{{ object.headline }}</h1>
+    <p>{{ object.content }}</p>
+    <p>Reporter: {{ object.reporter }}</p>
+    <p>Published: {{ object.pub_date|date }}</p>
+    <p>Date: {{ now|date }}</p>c
+</body>
+</html>
